@@ -1,13 +1,95 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Brownhill+Script&display=swap');
+@import url('https://db.onlinewebfonts.com/c/647a3ec586eb723be1710acedf9a1ece?family=Metric-Bold');
+/*@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Whisper&display=swap');
+
+html {
+  overflow-x: hidden;
+  background-color: #ffffff;
+
+}
+select,input {
+  outline-color: #a5a5a5;
+}
+a,
+p,
+div,
+li,
+h1,
+h2,
+h3,
+h4, th, div {
+  font-family: 'Prompt', sans-serif;
+  color: #1c1d1d;
+}
+p, td {
+  color: #667085;
+}
+.custom-width {
+  width: calc(100% - 100px);
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+div {
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(150, 150, 150, 0.2);
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+}
+/* hide arrows
+ Chrome, Safari, Edge, Opera */
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+   -webkit-appearance: none !important;
+   margin: 0 !important;
+ }
+ 
+ ::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #c6c6c6; 
+}
+::-webkit-scrollbar-thumb {
+  background: #636569; 
+  border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {  
+  background: #5677B4; 
+} 
+.brownhill-script {
+  font-family: 'Brownhill Script', cursive; /* Replace 'cursive' with the appropriate fallback font family */
+}
+.Metric-Bolt {
+  font-family: "Metric-Bold" , bold , italic;
+}
+.whisper-regular {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,20 @@
+/* Header.css */
+
+.header {
+    background-color: #494949; /* Dark gray background matching the site header */
+    color: #FFFFFF; /* White text color */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Clean and simple font */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Adjust font size to match the site */
+}
+
+.header img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
